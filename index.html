@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Farmer-Buyer Contract System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
+    <header>
+        <h1>Farmer-Buyer Contract System</h1>
+    </header>
+
+    <section id="contract-form">
+        <h2>Create a Contract</h2>
+        <form id="contractForm">
+            <label>Farmer Name: <input type="text" id="farmerName" required></label>
+            <label>Buyer Name: <input type="text" id="buyerName" required></label>
+            <label>Contract Details: <textarea id="contractDetails" required></textarea></label>
+            <label><input type="checkbox" id="terms"> Agree to Terms</label>
+            <button type="submit">Create Contract</button>
+        </form>
+    </section>
+
+    <section id="contract-list">
+        <h2>Active Contracts</h2>
+        <ul id="contracts"></ul>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
